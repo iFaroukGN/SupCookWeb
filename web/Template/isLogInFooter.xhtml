@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+    <h:head>
+       
+    </h:head>
+    <h:body>
+        
+        <ui:composition>
+            
+            <nav id="navbar-example2" class="navbar fixed-bottom navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="nav nav-pills">
+                  
+                  <li class="nav-item" >
+                      <h:form id="add">
+                        <button type="button" class="btn btn-success bmd-btn-fab" jsf:id="addBtn" jsf:action="#{userBean.logout()}" >
+                            <i class="material-icons">add</i>
+                        </button>
+                      </h:form>
+                    
+                  </li>
+                    
+                    <li class="nav-item">
+                        <h:link class="btn btn-success bmd-btn-fab" outcome="/Login/Recipe/addRecipe" > <p> <br/><br/><br/><i class="material-icons" >add</i></p></h:link>
+                  </li>
+                    
+                </ul>
+              </nav>
+              
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe" crossorigin="anonymous"></script>
+            <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    
+        </ui:composition>
+   
+
+    </h:body>
+</html>
+
